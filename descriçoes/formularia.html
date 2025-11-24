@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        header {
+            background-color: #149c36;
+        }
+    </style>
+    <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Toca Animal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Adotar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Redes Sociais</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</head>
+
+<body>
+   <br>
+   <br> 
+    <br>
+    
+    <div class="container">
+        <h2 class="text-center mb-4 text-success fw-bold">Formulário para adoção</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="form-contato" class="p-4 border rounded shadow-sm bg-white">
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número para contato</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Endereço</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control " rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

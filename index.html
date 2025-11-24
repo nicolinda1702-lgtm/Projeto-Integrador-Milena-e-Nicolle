@@ -1,11 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page com Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        /*Pequeno texto peersonalizado*/
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #149c36;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        /*flecha*/
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            border: none;
+            border-radius: 50%;
+            background-color: #338b0f;
+            color: white;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        footer {
+            background-color: #1b7200;
+            color: white;
+            padding: 05px 0;
+            text-align: center;
+
+        }
+
+        .icons {
+            text-align: center;
+            color: #149c36;
+        }
+
+        .botao {
+            background-color: #149c36;
+            border-radius: 10px;
+            width: 100px;
+            margin: 10px;
+            border-color: rgb(39, 126, 17);
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000
+        }
+
+        .cachorro {
+            display: flex;
+            justify-content: center;
+            margin-left: 65px;
+            border-radius: 10px;
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!--NavBar-->
+    <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Toca Animal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Adotar">Adotar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Redes Sociais">Redes Sociais</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section id="home" class="bg-success text-light text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Bem-vindo à Toca Animal</h1>
+            <p class="lead mb-4">Adote animais resgatados de maus tratos</p>
+        </div>
+    </section>
+
+
+
+    <!--Sobre-->
+    <section id="sobre">
+        <div class="container text-center">
+            <h2 class="mb-4 text-success fw-bold">Sobre nós</h2>
+            <p class="lead">Nosso projeto nasceu do amor e da compaixão pelos animais que foram
+                abandonados. Acreditamos que todo ser vivo merece uma nova chance — uma vida com carinho, respeito e
+                segurança.
+
+                Aqui, acolhemos cães, gatos, porquinho da India, hamsters e coelhos que foram resgatados de situações
+                difíceis.
+                Cuidamos deles com dedicação, oferecendo tratamento, alimentação, abrigo e, principalmente, afeto.
+
+                Nosso objetivo é encontrar lares responsáveis e amorosos, onde esses animais possam recomeçar suas
+                histórias com dignidade. Também buscamos conscientizar a sociedade sobre a importância da adoção tenta
+                combater o abandono e mostrando que pequenas ações podem transformar vidas.
+
+                Mais do que um projeto, somos uma família unida por amor e respeito aos animais — e cada adoção
+                representa um final feliz conquistado com esperança e empatia. 🐶🐱🐹🐰🐇
+            </p>
+        </div>
+    </section>
+
+    <!--Adotar-->
+    <section id="Adotar" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 text-success fw-bold">Adotar</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Algodão 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/algodao.jpg" alt="coelho" class="cachorro">
+                                <a href="descriçoes/algodao.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Bela 🔴 </h5>
+                            <p class="card-text">
+
+                                <img src="imagens/bela.jpg" alt="porquinho da india" class="cachorro">
+                                <a href="descriçoes/bela.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Bola de neve 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/bola de neve.jpg" alt="hamster" class="cachorro">
+                                <a href="descriçoes/bola-de-neve.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Bom Bom 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/bom bom.jpg" alt="cachorro" class="cachorro">
+                                <a href="descriçoes/bom-bom.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Cacau 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/cacau.jpg" alt="cachorro" class="cachorro">
+                                <a href="descriçoes/cacau.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Defumado 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/defumado.jpg" alt="cachorro" class="cachorro">
+                                <a href="descriçoes/defumado.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Dois amores 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/dois amores.jpg" alt="cadela" class="cachorro">
+                                <a href="descriçoes/dois-amores.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Flocos 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/flocos.jpg" alt="hamster" class="cachorro">
+                                <a href="descriçoes/flocos.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Mancha 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/mancha.jpg" alt="gata" class="cachorro">
+                                <a href="descriçoes/mancha.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Margarida 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/margarida.jpg" alt="gata" class="cachorro">
+                                <a href="descriçoes/margarida.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Moicano 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/moicaninho.jpg" alt="coelho" class="cachorro">
+                                <a href="descriçoes/moicano.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Napolitno 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/Napoliano.jpg" alt="cachorro" class="cachorro">
+                                <a href="descriçoes/napolitano.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Paçoca 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/paçoca.jpg" alt="gato" class="cachorro">
+                                <a href="descriçoes/paçoca.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Rubi 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/rubi.jpg" alt="porquinho da india" class="cachorro">
+                                <a href="descriçoes/rubi.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Tata 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/tata.jpg" alt="hamster" class="cachorro">
+                                <a href="descriçoes/tata.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Topete 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/tobete.jpg" alt="porquinho da india" class="cachorro">
+                                <a href="descriçoes/tobete.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Toró 🔵</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/Toro.jpg" alt="coelho" class="cachorro">
+                                <a href="descriçoes/toro.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/formularia.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-text">Tristeza 🔴</h5>
+                            <p class="card-text">
+
+                                <img src="imagens/Tristeza.jpg" alt="coelho" class="cachorro">
+                                <a href="descriçoes/tristeza.html">Ver mais sobre o pet</a><br>
+                                <button class="botao"><a href="descriçoes/tristeza.html">adote</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Contato-->
+    <section id="Redes Sociais">
+        <div class="container">
+            <h2 class="text-center mb-4 text-success fw-bold">Redes Sociais</h2>
+            <div class="icons">
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Botão topo-->
+    <button id="topBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Feito por Nicolle e Milena 2025</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
